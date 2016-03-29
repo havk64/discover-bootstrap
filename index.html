@@ -168,14 +168,15 @@
                 <hr>
                 <div class="clearfix"></div>
                 <div class="footer">
-                 <div id="colorpicker" class="well">
+                 <div class="well">
                      © 2016 Acme, inc.
-                     <button class="btn btn-primary btn-md pull-right">
+                     <button id="colorpicker" class="btn btn-primary btn-md pull-right">
                      Change Background Color
                      </button>
-                     <div class="modal-fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                     <!-- Modal -->
+                     <div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                          <div class="modal-dialog">
-                             <div class="modal-content">
+                             <div class="modal-content" role="document">
                                  <div class="modal-header">
                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                      <h4 class="modal-title">Choose the new color for the Background</h4>
@@ -184,7 +185,7 @@
                                  <div class="modal-footer"></div>
                              </div>
                          </div>
-                     </div>
+                     </div> <!-- /.Modal -->
                  </div>
                   
 
