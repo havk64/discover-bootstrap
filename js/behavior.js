@@ -16,4 +16,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }).on('rating.change', function(event,value,caption){
         alert("New value is: "+value);
     });
+    $('#colorpicker').click(function() {
+        $('#myModal').modal('toggle');
+    });
 })
