@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function(){
     
     // => Adding color picker to input element.
     $('.colorpicker-element').colorpicker({
-        colorSelectors: {
+        colorSelectors: {  // => Adding Bootstrap colors to the picker.
             'default': '#777777',
             'primary': '#337ab7',
             'success': '#5cb85c',
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function(){
             'warning': '#f0ad4e',
             'danger': '#d9534f'
         }
-    }).on('changeColor.colorpicker', function(event){
+    }).on('changeColor.colorpicker', function(event){ // => On change of color changes the background.
         $('body').css('background-color', event.color.toHex());
     });
 })
