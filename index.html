@@ -174,17 +174,28 @@
                      Change Background Color
                      </button>
                      <!-- Modal -->
-                     <div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                     <div class="modal fade in" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                          <div class="modal-dialog">
                              <div class="modal-content" role="document">
                                  <div class="modal-header">
                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                     <h4 class="modal-title">Choose the new color for the Background</h4>
+                                     <h4 class="modal-title">Choose new Background Color</h4>
                                  </div>
-                                 <div class="modal-body"></div>
-                                 <div class="modal-footer"></div>
-                             </div>
-                         </div>
+                                 <div class="modal-body">
+                                     <div class="input-group colorpicker-element">
+                                         <input type="text" value="" class="form-control" />
+                                         <span class="input-group-addon">
+                                            <i></i>
+                                             <!-- <i style="background-color: blue;">
+                                             </i> -->
+                                        </span>
+                                    </div>
+                                 </div> <!-- / .modal-body -->
+                                 <div class="modal-footer">
+                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                 </div>
+                             </div>  <!-- / Modal Content -->
+                         </div>    <!-- /.modal-dialog -->
                      </div> <!-- /.Modal -->
                  </div>
                   
