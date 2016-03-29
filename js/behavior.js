@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function(){
     
     // => Adding color picker call using modal.
     $('#colorpicker').click(function() {
-        $('#myModal').modal('toggle');
+        $('#modal').modal('toggle');
+    });
+    
+    // => Adding color picker to input element.
+    $('.colorpicker-element').colorpicker().on('changeColor.colorpicker', function(event){
+        $('body').css('background-color', event.color.toHex());
     });
 })
