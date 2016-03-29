@@ -12,5 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
         class: "rating",
         max: 3,
         size: 'xs'
-    })
+    }).on('rating.change', function(event,value,caption){
+        alert("New value is: "+value);
+    });
 })
