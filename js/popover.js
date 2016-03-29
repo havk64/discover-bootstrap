@@ -6,4 +6,11 @@ document.addEventListener('DOMContentLoaded', function(){
         content: "Tons of information about Acme's products and services. Click now, you wont be disappointed"
     })
     $('#Learn-More').popover(options); // => Call to popover on "hover".
+    $("#input-id").rating({ 
+        stars: 3,
+        type: "number",
+        class: "rating",
+        min: 0,
+        max: 3,
+    })
 })
