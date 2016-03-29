@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function(){
         stars: 3,
         type: "number",
         class: "rating",
-        min: 0,
         max: 3,
+        size: 'xs'
     })
 })
