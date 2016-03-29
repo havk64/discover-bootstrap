@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function(){
         content: "Tons of information about Acme's products and services. Click now, you wont be disappointed"
     })
     $('#Learn-More').popover(options); // => Call to popover on "hover".
+    
+    // => Options to Star Rating.
     $(".input-id").rating({ 
         stars: 3,
         type: "number",
@@ -13,9 +15,11 @@ document.addEventListener('DOMContentLoaded', function(){
         min: 0,
         max: 3,
         size: 'xs'
-    }).on('rating.change', function(event,value,caption){
+    }).on('rating.change', function(event,value,caption){ // On change alert value.
         alert("New value is: "+value);
     });
+    
+    // => Adding color picker call using modal.
     $('#colorpicker').click(function() {
         $('#myModal').modal('toggle');
     });
